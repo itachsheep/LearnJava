@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<!--<VideoView
+    android:id="@+id/keydown_vv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />-->
+
+
+        <!--<VideoView
+            android:id="@+id/keydown_vv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:id="@+id/keydown_tv"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21:00"
+            android:textSize="25sp"/>
+        <ProgressBar
+            android:id="@+id/keydown_pb"
+            android:layout_below="@id/keydown_tv"
+            android:layout_alignLeft="@id/keydown_tv"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="10"
+            android:max="100"
+            />
+
+</RelativeLayout>
