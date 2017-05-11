@@ -19,7 +19,7 @@ import view.CaTipsDialog;
 
 public class DialogActivity extends Activity {
     private Intent service;
-
+//test for me
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
