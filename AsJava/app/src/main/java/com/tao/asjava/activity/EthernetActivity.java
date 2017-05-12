@@ -22,6 +22,7 @@ import util.LogUtil;
 public class EthernetActivity extends Activity {
     private Button bt;
     private TextView tv;
+    private TextView tv2;
     private EthernetManager mEthManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +34,6 @@ public class EthernetActivity extends Activity {
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mEthManager = (EthernetManager) getSystemService("ethernet");
-                if (mEthManager != null) {
-
 //                    String Mode = mEthManager.getEthernetMode();
 //                    LogUtil.i("onCreate() Mode = " + Mode);
 //
@@ -46,9 +44,19 @@ public class EthernetActivity extends Activity {
 
 //                    IpConfiguration ipConfiguration = mEthManager.getConfiguration(ConnectivityManager.TYPE_ETHERNET);
 //                    LogUtil.i("ipconfiguration: "+ipConfiguration.toString());
-                    ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-                    cm.getActiveNetworkInfo();
+                ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                cm.getActiveNetworkInfo();
+                try {
+                    Thread.sleep(10000);
+                } catch (InterruptedException e) {
+                    LogUtil.i("sleep exception e: "+e.getMessage());
                 }
+//                try{
+//                    tv2.setText("dddd");
+//                }catch (Exception e){
+//                    LogUtil.i("exception e: "+e.getMessage());
+//                }
+
             }
         });
     }
