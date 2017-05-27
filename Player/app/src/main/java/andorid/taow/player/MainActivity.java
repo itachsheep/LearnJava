@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
             super.handleMessage(msg);
         }
     };
-
+    private int mDuration;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,23 +113,30 @@ public class MainActivity extends Activity {
                 if(event.getAction() == KeyEvent.ACTION_DOWN ){
                     if(keyCode == KeyEvent.KEYCODE_DPAD_LEFT){
                         mHandler.removeCallbacks(pbRunnable);
-                        int duration = mVideoView.getDuration();
-                        Log.i(TAG,"onKeyDown left duration:"+duration);
-                        int progress = (int) (mPb.getProgress()- duration * 0.01);
-                        mPb.setProgress(progress);
+
+                        if(!isStartMove){
+                            handleMove(false);
+                            isStartMove = true;
+                        }
+
                         return true;
                     }else if(keyCode == KeyEvent.KEYCODE_DPAD_RIGHT){
                         mHandler.removeCallbacks(pbRunnable);
-                        int duration = mVideoView.getDuration();
-                        Log.i(TAG,"onKeyDown right duration:"+duration);
-                        int progress = (int) (mPb.getProgress()+ duration * 0.01);
-                        mPb.setProgress(progress);
+                        if(!isStartMove){
+                            isStartMove = true;
+                            handleMove(true);
+                        }
+
                         return true;
 
                     }
                 }
 
                 if(event.getAction() == KeyEvent.ACTION_UP){
+                    isStartMove = false;
+                    mHandler.removeCallbacks(moveAddRunnable);
+                    mHandler.removeCallbacks(moveSubRunnable);
+
                     int pb = mPb.getProgress();
                     Log.i(TAG,"onKeyup pb:"+pb);
                     mVideoView.seekTo(pb);
@@ -140,6 +147,34 @@ public class MainActivity extends Activity {
                 return false;
             }
         });
+    }
+    private Runnable moveAddRunnable = new Runnable() {
+        @Override
+        public void run() {
+            int duration = mVideoView.getDuration();
+            Log.i(TAG,"moveAddRunnable -------------------");
+            int progress = (int) (mPb.getProgress()+ duration * 0.005);
+            mPb.setProgress(progress);
+            mHandler.postDelayed(moveAddRunnable,50);
+        }
+    };
+
+    private Runnable moveSubRunnable = new Runnable() {
+        @Override
+        public void run() {
+            int duration = mVideoView.getDuration();
+            Log.i(TAG,"moveSubRunnable -------------------");
+            int progress = (int) (mPb.getProgress()- duration * 0.005);
+            mPb.setProgress(progress);
+            mHandler.postDelayed(moveSubRunnable,50);
+        }
+    };
+    private void handleMove(boolean isAdd) {
+        if(isAdd){
+            mHandler.post(moveAddRunnable);
+        }else {
+            mHandler.post(moveSubRunnable);
+        }
     }
 
     @Override

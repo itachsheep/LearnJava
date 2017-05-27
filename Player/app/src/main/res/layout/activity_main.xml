@@ -20,7 +20,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-
+            android:text="http://10.180.90.72:8080/test.mp4"
             />
 <!--android:text="http://10.180.90.72:8080/test.mp4"-->
                 <Button
