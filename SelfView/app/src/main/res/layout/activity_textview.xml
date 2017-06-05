@@ -38,7 +38,7 @@
         android:id="@+id/atv_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding=""
+        android:padding="3dp"
         android:background="@drawable/ms_input_normal"
         android:textSize="27sp"
         android:visibility="gone"
