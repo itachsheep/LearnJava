@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -8,9 +8,16 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     >
-
-    <TextView
+    <Button
+        android:id="@+id/textact_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onclick"
+        android:textColor="@android:color/white"
+        android:textSize="35sp"/>
+    <view.MarqueeTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -25,5 +32,15 @@
         android:scrollHorizontally="true"
         android:maxWidth="250dp"
         android:singleLine="true"
-        android:text="Gwk98kdwwdjkj89ksjijjkjygyuew" />
-</RelativeLayout>
+        android:text="Gwk98kdwwdjkj89ksjijjkjygyuew45433kljd990907878790" />
+
+    <view.AutoTextView
+        android:id="@+id/atv_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding=""
+        android:background="@drawable/ms_input_normal"
+        android:textSize="27sp"
+        android:visibility="gone"
+        />
+</LinearLayout>

@@ -3,7 +3,7 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="android:Theme.Black.NoTitleBar.Fullscreen">
         <!-- Customize your theme here. -->
-
+        <item name="android:windowBackground">@drawable/bg</item>
     </style>
 
 </resources>

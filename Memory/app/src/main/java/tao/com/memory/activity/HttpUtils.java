@@ -27,17 +27,17 @@ public class HttpUtils {
     private static final String CONTENT_TYPE_TEXT_JSON = "text/json";
     public static void httpPostWithJSON(String url, String json) throws Exception {
         // 将JSON进行UTF-8编码,以便传输中文
-        String encoderJson = URLEncoder.encode(json, HTTP.UTF_8);
-
-        DefaultHttpClient httpClient = new DefaultHttpClient();
-        HttpPost httpPost = new HttpPost(url);
-        httpPost.addHeader(HTTP.CONTENT_TYPE, APPLICATION_JSON);
-
-        StringEntity se = new StringEntity(encoderJson);
-        se.setContentType(CONTENT_TYPE_TEXT_JSON);
-        se.setContentEncoding(new BasicHeader(HTTP.CONTENT_TYPE, APPLICATION_JSON));
-        httpPost.setEntity(se);
-        httpClient.execute(httpPost);
+//        String encoderJson = URLEncoder.encode(json, HTTP.UTF_8);
+//
+//        DefaultHttpClient httpClient = new DefaultHttpClient();
+//        HttpPost httpPost = new HttpPost(url);
+//        httpPost.addHeader(HTTP.CONTENT_TYPE, APPLICATION_JSON);
+//
+//        StringEntity se = new StringEntity(encoderJson);
+//        se.setContentType(CONTENT_TYPE_TEXT_JSON);
+//        se.setContentEncoding(new BasicHeader(HTTP.CONTENT_TYPE, APPLICATION_JSON));
+//        httpPost.setEntity(se);
+//        httpClient.execute(httpPost);
     }
 
 
@@ -109,7 +109,7 @@ public class HttpUtils {
         byte[] data = new byte[1024];
         int len = 0;
         try {
-            while((len = inputStream.read(data)) != -1) {
+            while ((len = inputStream.read(data)) != -1) {
                 byteArrayOutputStream.write(data, 0, len);
             }
         } catch (IOException e) {
@@ -118,7 +118,4 @@ public class HttpUtils {
         resultData = new String(byteArrayOutputStream.toByteArray());
         return resultData;
     }
-
-
-}
 }

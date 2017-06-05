@@ -1,21 +1,21 @@
 package tao.com.memory.activity;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.pm.IPackageDataObserver;
 import android.content.pm.IPackageStatsObserver;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageStats;
-import android.os.Environment;
+
 import android.os.Handler;
-import android.os.Looper;
+
 import android.os.Message;
 import android.os.RemoteException;
-import android.os.StatFs;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.text.format.Formatter;
-import android.util.Log;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -29,7 +29,7 @@ import java.util.List;
 import tao.com.memory.R;
 import tao.com.memory.utils.LogUtil;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     private TextView tvCacheSize;
     private long cacheSize;
     private long appSize;
