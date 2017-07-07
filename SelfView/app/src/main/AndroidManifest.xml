@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="andorid.taow.selfview">
+    package="andorid.taow.selfview"
+
+    >
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
@@ -9,7 +11,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="activity.DownloadActivity">
+        <activity android:name="activity.TextViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,9 +19,8 @@
             </intent-filter>
         </activity>
         <service android:name="service.DownloadService"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter >
+           >
+            <intent-filter android:priority="1000">
                 <action android:name="andorid.taow.selfview.download.service"/>
             </intent-filter>
         </service>

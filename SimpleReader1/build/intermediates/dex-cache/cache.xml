@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\as_workspace\MyDemo\SimpleReader1\app\libs\cpdetector_1.0.10.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5e823a42ddfad49a445a89d15566792b9ed8ecac">
+        <dex dex="D:\as_workspace\MyDemo\SimpleReader1\app\build\intermediates\transforms\dex\debug\folders\1000\2\cpdetector_1.0.10_45f477ea513821546d14447a766362588a4fb561\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\taow\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="D:\as_workspace\MyDemo\SimpleReader1\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-18.0.0_0e28ee8832677149f876fec9b024cc98ea7bf107\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\as_workspace\MyDemo\SimpleReader1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="630cac35fa1ff9f9c4e33546385021df7abb6426">
+        <dex dex="D:\as_workspace\MyDemo\SimpleReader1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_3d6a51bb3aa8b5a30651264b087f458d905f7de6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\as_workspace\MyDemo\SimpleReader1\app\libs\jargs-1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0c40b72d934ddbea05368df91456f4d3689296dd">
+        <dex dex="D:\as_workspace\MyDemo\SimpleReader1\app\build\intermediates\transforms\dex\debug\folders\1000\2\jargs-1.0_62ddf6f40d72e284c714547fa25489fbbf90cf63\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\as_workspace\MyDemo\SimpleReader1\app\libs\antlr-2.7.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="56e971d779b8aeee0366d11a613dcf9f7882a3b1">
+        <dex dex="D:\as_workspace\MyDemo\SimpleReader1\app\build\intermediates\transforms\dex\debug\folders\1000\2\antlr-2.7.4_02b29d7cda803d50d8cd2686fcd5cadf4341c2d6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\as_workspace\MyDemo\SimpleReader1\app\libs\chardet-1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f7c063ce9ef5c742bebdd1712be9180d618fb559">
+        <dex dex="D:\as_workspace\MyDemo\SimpleReader1\app\build\intermediates\transforms\dex\debug\folders\1000\2\chardet-1.0_2c58e4cabf484714e73162d427a7de37e56b0118\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\as_workspace\MyDemo\SimpleReader1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1e4ca0d24f023c57a9fe2bc1fe33b6580f21208f">
+        <dex dex="D:\as_workspace\MyDemo\SimpleReader1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_ef45e33e6df5b7c42fa41a986c3fa8232b0f70e8\classes.dex" />
+    </item>
+
+</items>

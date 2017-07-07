@@ -8,6 +8,7 @@ import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.RemoteException;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -23,19 +24,58 @@ import tao.com.memory.utils.LogUtil;
 
 public class CheckUpgradeActivity extends Activity implements View.OnClickListener {
     private Button btStart;
+    private Button btWait;
+    private Button btNotify;
+    private Button btSleep;
     private ProgressBar pb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_check_upgrade);
         btStart = (Button) findViewById(R.id.check_bt_start);
+        btWait = (Button) findViewById(R.id.check_bt_wait);
+        btNotify = (Button) findViewById(R.id.check_bt_notify);
+        btSleep = (Button) findViewById(R.id.check_bt_sleep);
         pb = (ProgressBar) findViewById(R.id.check_pb);
         btStart.setOnClickListener(this);
+        btWait.setOnClickListener(this);
+        btNotify.setOnClickListener(this);
+        btSleep.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
-        bindDownloadService();
+        switch (view.getId()){
+            case R.id.check_bt_start:
+                bindDownloadService();
+                break;
+            case R.id.check_bt_wait:
+                try {
+                    downloadBinder.operateIpService(0);
+//                    downloadBinder.setIpUpgradeCallback(null);
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+                break;
+            case R.id.check_bt_notify:
+                try {
+                    downloadBinder.operateIpService(1);
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+                break;
+            case R.id.check_bt_sleep:
+                try {
+                    downloadBinder.operateIpService(2);
+//                    downloadBinder.setIpUpgradeCallback(null);
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+                break;
+            default:
+                break;
+        }
+
     }
     private IDownload downloadBinder;
     private ServiceConnection serviceConn = new ServiceConnection() {

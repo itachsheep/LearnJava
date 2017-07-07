@@ -1,0 +1,7 @@
+#Fri Jul 07 10:08:57 CST 2017
+base.0=D\:\\as_workspace\\MyDemo\\fanyedemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_55c3059d58e0192710d39c15ec71b180d554e43b
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=D\:\\as_workspace\\MyDemo\\fanyedemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_463dde66f5ba6ae822dae671e96664a76d23f1a3\\classes.dex
+base.1=D\:\\as_workspace\\MyDemo\\fanyedemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_463dde66f5ba6ae822dae671e96664a76d23f1a3
+file.0=D\:\\as_workspace\\MyDemo\\fanyedemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_55c3059d58e0192710d39c15ec71b180d554e43b\\classes.dex

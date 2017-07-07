@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\as_workspace\\MyDemo\\fanyedemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "D:\\as_workspace\\MyDemo\\fanyedemo\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "D:\\as_workspace\\MyDemo\\fanyedemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listview.xml",
+        "source": "D:\\as_workspace\\MyDemo\\fanyedemo\\app\\src\\main\\res\\layout\\listview.xml"
+    }
+]

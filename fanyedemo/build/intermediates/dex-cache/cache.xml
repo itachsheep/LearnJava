@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\as_workspace\MyDemo\fanyedemo\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb8e9277bc15a9c6f60dc3f9b6b9f30255f6304c">
+        <dex dex="D:\as_workspace\MyDemo\fanyedemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_463dde66f5ba6ae822dae671e96664a76d23f1a3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\taow\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="D:\as_workspace\MyDemo\fanyedemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-19.1.0_6b77ff1c773eadf3facac5145121b112f081226d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\as_workspace\MyDemo\fanyedemo\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a42aca5e55f14e5f0bcffae7fcc86d5a1d50a424">
+        <dex dex="D:\as_workspace\MyDemo\fanyedemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_55c3059d58e0192710d39c15ec71b180d554e43b\classes.dex" />
+    </item>
+
+</items>

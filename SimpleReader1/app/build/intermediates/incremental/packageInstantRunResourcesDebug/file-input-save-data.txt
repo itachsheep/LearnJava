@@ -1,0 +1,33 @@
+#Internal package file, do not edit.
+#Fri Jul 07 11:35:52 CST 2017
+2.base=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\assets\\debug
+5.file=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\assets\\debug\\documents\\The Amber Spyglass.txt
+5.set=ASSET
+3.base=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\res\\resources-debug.ap_
+6.file=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\menu-v11\\main.xml
+2.set=ASSET
+4.base=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\res\\resources-debug.ap_
+7.file=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\assets\\debug\\documents\\The Subtle Knife.txt
+7.set=ASSET
+count=10
+0.file=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\menu\\main.xml
+5.base=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\assets\\debug
+8.file=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-mdpi-v4\\ic_launcher.png
+4.set=ANDROID_RESOURCE
+6.base=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\res\\resources-debug.ap_
+1.file=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v11\\activity_main.xml
+9.set=ANDROID_RESOURCE
+9.file=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
+1.set=ANDROID_RESOURCE
+7.base=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\assets\\debug
+2.file=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\assets\\debug\\documents\\The Golden Compass.txt
+6.set=ANDROID_RESOURCE
+0.base=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\res\\resources-debug.ap_
+8.base=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\res\\resources-debug.ap_
+3.file=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_main.xml
+3.set=ANDROID_RESOURCE
+1.base=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\res\\resources-debug.ap_
+9.base=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\res\\resources-debug.ap_
+4.file=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
+8.set=ANDROID_RESOURCE
+0.set=ANDROID_RESOURCE
