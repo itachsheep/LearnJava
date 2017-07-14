@@ -1,4 +1,4 @@
-package com.example;
+package com.leetcode;
 
 public class Huiwen {
     public static void main(String[] args){

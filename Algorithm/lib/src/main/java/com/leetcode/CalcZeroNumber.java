@@ -1,4 +1,4 @@
-package com.example;
+package com.leetcode;
 
 /**
  * Created by taowei on 2017/7/11.
