@@ -13,6 +13,34 @@ public class LinkList {
         first = null;
     }
 
+    public Link delete(int key){
+        Link pre = first,current = pre.next;
+        if(first.iData == key) {
+            first = first.next;
+            return pre;
+        }
+        while(current != null){
+            if(current.iData == key){
+                pre.next = current.next;
+                return current;
+            }
+            pre = current;
+            current = current.next;
+        }
+        return current;
+    }
+
+    public Link find(int key){
+        Link current = first;
+        while(current != null){
+            if(current.iData == key){
+                return current;
+            }
+            current = current.next;
+        }
+        return current;
+    }
+
     public void displayList(){
         System.out.print("List (firt --> last): ");
         Link current = first;
