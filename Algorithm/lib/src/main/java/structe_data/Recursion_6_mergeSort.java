@@ -9,15 +9,9 @@ import java.util.TimeZone;
 
 public class Recursion_6_mergeSort {
     public static void main(String[] args){
-        long ms = 100*1000;
-        SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss");
-        TimeZone china = TimeZone.getTimeZone("GMT+:08:00");
-        formatter.setTimeZone(china);
-        String res = formatter.format(ms);
-        Utils.log("res: "+res);
-       /* int[] arr = {23,47,81,95,7,14,39,55,62,74};
+        int[] arr = {23,47,81,95,7,14,39,55,62,74};
         mergeSort(arr,0,arr.length-1);
-        Utils.printArr(arr);*/
+        Utils.printArr(arr);
     }
 
     private static void mergeSort(int[] arr, int low,int high){
