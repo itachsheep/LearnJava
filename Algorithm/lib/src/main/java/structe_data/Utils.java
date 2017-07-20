@@ -15,6 +15,13 @@ public class Utils {
         System.out.println();
     }
 
+    public static void printArr(char[] buf,int begin,int end) {
+        for(int i = 0 ; i <= end; i++){
+            System.out.print(buf[i]+", ");
+        }
+        System.out.println();
+    }
+
     public static void log(String mes){
         System.out.println(mes);
     }
