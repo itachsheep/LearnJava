@@ -12,7 +12,7 @@ public class Recursion_3_combination {
      3. 求n个元素中选取m个元素的组合方式有哪些: abc中选2个元素的组合是ab, ac, bc;
      4. 求n个元素中选取m个元素的排列方式有哪些: abc中选2个元素的排列是ab, ba, ac, ca, bc, cb;
      */
-        char[] arr = {'a','a','c','a'};
+        char[] arr = {'1','2','3','4'};
         combination(arr);
     }
     /** 数组元素的全组合 */

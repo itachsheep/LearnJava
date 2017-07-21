@@ -8,6 +8,13 @@ package structe_data;
  */
 
 public class Utils {
+
+    public static void printArr(int[] arr,int length) {
+        for(int i = 0 ; i < length; i++){
+            System.out.print(arr[i]+", ");
+        }
+        System.out.println();
+    }
     public static void printArr(int[] arr) {
         for(int i = 0 ; i < arr.length; i++){
             System.out.print(arr[i]+", ");

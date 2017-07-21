@@ -1,5 +1,8 @@
 package structe_data;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by taowei on 2017/7/20.
  * 2017-07-20 23:08
@@ -8,39 +11,49 @@ package structe_data;
  */
 
 public class Recursion_7_knapsack {
+    private static int[] subArr ;
     public static void main(String[] args){
         int[] arr = {11,8,7,6,5};
-
+        subArr = new int[arr.length];
         int total = 20;
-        find(arr,0,arr.length-1,total);
+        knapsack(arr);
     }
-    private static void find(int[] arr,int start,int end,int total){
+    private static void knapsack(int[] arr){
+        int length = arr.length;
+        for(int i = 0; i < length; i++){
+            //组合数字的个数，1,2...递增
+            int mElements = i+1;
+            combine_find(arr,length,mElements,0);
+        }
+    }
 
-        for(int i = start; i < end; i++){
-            int temp = arr[start];
-            //System.out.println("-------"+total);
-            if(temp == total){
-                System.out.println("--- "+temp);
+    /**
+     *
+     * @param arr
+     * 原始数组
+     * @param length
+     * 原始数组length
+     * @param mElements
+     * 组合数组的大小
+     * @param nReady
+     * 已经放到组合数组里面的元素个数
+     */
+    private static void combine_find(int[] arr, int length, int mElements,int nReady) {
+        if(nReady == mElements){
+            //放到组合数组的个数等于组合数组的大小 ，找齐了，就不找了
+            int sum = 0;
+            for (int i : subArr) {
+                sum += i;
             }
-            find(arr,start+1,end,total - temp);
-        }
-
-    }
-
-    /*private static void knapsack(int[] arr,int start,int end,int total,
-                               int[] cont,int num){
-        if(start == end){
-            cont = new int[arr.length];
-        }
-        for(int i = start; i<= end;i++){
-            int temp = arr[start];
-            cont[num++] = temp;
-            if(temp == total){
-                return;
+            if(sum == 20){
+                Utils.printArr(subArr,mElements);
             }
-            knapsack(arr,start+1,end,total-temp,cont,num);
+        }else {
+            //从后往前开始找，停止条件是 i 大于还需要找的数组个数
+            for(int i = length; i >= mElements-nReady; i--){
+                subArr[nReady] = arr[i -1];
+                combine_find(arr,i-1,mElements,nReady+1);
+            }
         }
     }
-*/
-
 }
