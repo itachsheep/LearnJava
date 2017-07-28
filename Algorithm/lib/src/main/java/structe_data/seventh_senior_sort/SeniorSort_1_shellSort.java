@@ -1,4 +1,6 @@
-package structe_data;
+package structe_data.seventh_senior_sort;
+
+import structe_data.Utils;
 
 /**
  * Created by taow on 2017/7/21.

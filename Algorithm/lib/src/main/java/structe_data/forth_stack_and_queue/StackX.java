@@ -1,4 +1,4 @@
-package structe_data;
+package structe_data.forth_stack_and_queue;
 
 import java.util.Stack;
 

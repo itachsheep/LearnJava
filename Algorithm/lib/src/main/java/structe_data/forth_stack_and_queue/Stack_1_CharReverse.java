@@ -1,4 +1,4 @@
-package structe_data;
+package structe_data.forth_stack_and_queue;
 
 /**
  * Created by taowei on 2017/7/18.

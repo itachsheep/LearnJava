@@ -1,4 +1,4 @@
-package structe_data;
+package structe_data.fivth_linklist;
 
 /**
  * Created by taowei on 2017/7/18.

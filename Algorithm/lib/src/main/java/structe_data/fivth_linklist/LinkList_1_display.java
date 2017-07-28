@@ -1,6 +1,7 @@
-package structe_data;
+package structe_data.fivth_linklist;
 
-import java.util.LinkedList;
+import structe_data.Utils;
+import structe_data.fivth_linklist.LinkList;
 
 /**
  * Created by taowei on 2017/7/18.

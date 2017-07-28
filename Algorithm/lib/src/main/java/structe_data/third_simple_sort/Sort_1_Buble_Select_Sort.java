@@ -1,6 +1,8 @@
-package structe_data;
+package structe_data.third_simple_sort;
 
 import java.util.Random;
+
+import structe_data.Utils;
 
 /**
  * Created by taowei on 2017/7/15.

@@ -1,4 +1,4 @@
-package structe_data;
+package structe_data.sec_array;
 
 
 /**
