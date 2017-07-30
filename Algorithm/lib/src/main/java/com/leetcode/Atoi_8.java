@@ -1,5 +1,7 @@
 package com.leetcode;
 
+import javax.rmi.CORBA.Util;
+
 import structe_data.Utils;
 
 /**
@@ -8,7 +10,7 @@ import structe_data.Utils;
 
 public class Atoi_8 {
     public static void main(String[] args){
-        String s1 = "8781";
+        String s1 = "2147483648";
         Utils.log("s1 ---------- "+myAtoi(s1));
     }
     public static int myAtoi(String str) {
@@ -17,7 +19,7 @@ public class Atoi_8 {
          * 2, 符号+/-
          * 3, 字符串中有字母 --- 0
          */
-        if(str == null || str == ""){
+        if(str == null || str.equals("")){
             return 0;
         }
         int index = 0,sign = 1,sum = 0;
@@ -33,12 +35,15 @@ public class Atoi_8 {
         }
         for(; index < str.length(); index++){
             char c = str.charAt(index);
-            if(c > '0' || c < '9'){
-                return 0;
+            if(c < '0' || c > '9'){
+                break;
             }
             sum = sum * 10 + c - '0';
         }
-
+        sum *= sign;
+        if(sum > Integer.MAX_VALUE || sum < Integer.MIN_VALUE){
+            return 0;
+        }
         return sum;
     }
 }
