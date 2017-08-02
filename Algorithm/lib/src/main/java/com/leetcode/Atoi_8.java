@@ -1,5 +1,8 @@
 package com.leetcode;
 
+import java.text.SimpleDateFormat;
+import java.util.TimeZone;
+
 import javax.rmi.CORBA.Util;
 
 import structe_data.Utils;
@@ -10,8 +13,16 @@ import structe_data.Utils;
 
 public class Atoi_8 {
     public static void main(String[] args){
-        String s1 = "2147483648";
-        Utils.log("s1 ---------- "+myAtoi(s1));
+//        String s1 = "2147483648";
+//        Utils.log("s1 ---------- "+myAtoi(s1));
+
+        SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss");
+        TimeZone china = TimeZone.getTimeZone("GMT+:08:00");
+        formatter.setTimeZone(china);
+
+        int adtime = 0;
+        String aDduration = formatter.format(adtime);
+        Utils.log("adDuration ----------- "+aDduration);
     }
     public static int myAtoi(String str) {
         /**

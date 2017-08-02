@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/as_line_xiang"
+        />
+
+   <RelativeLayout
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center">
+       <TextView
+           android:layout_marginTop="15dp"
+           android:id="@+id/blue_tv_i1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/bluetooth_tv_miaosu"
+           android:textColor="#7a9199"
+           android:textSize="20sp"/>
+       <Button
+           android:id="@+id/blue_dsb_switch"
+           android:layout_toRightOf="@id/blue_tv_i1"
+           android:nextFocusUp="@id/blue_dsb_switch"
+           style="@style/ms_value"
+           android:text="开启"
+           android:textSize="20sp" />
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/blue_dsb_switch"
+           android:layout_alignLeft="@id/blue_dsb_switch"
+           android:id="@+id/blue_bt_search"
+           android:textSize="20sp"
+           android:text="@string/bluetooth_bt_search" />
+   </RelativeLayout>
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/as_line_xiang"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/blue_tv_i2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bluetooth_device_list"
+            android:textColor="#7a9199"
+            android:textSize="20sp"/>
+        <ListView
+            android:id="@+id/blue_lv_devicelist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

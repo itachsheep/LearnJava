@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BlueGo</string>
+    <!--蓝牙管理-->
+    <string name="nav_bluetooth">蓝牙管理</string>
+    <string name="bluetooth_tv_miaosu">蓝牙功能：</string>
+    <string name="bluetooth_bt_search">搜索设备</string>
+    <string name="bluetooth_device_list">设备列表：</string>
+    <!--服务信息-->
+    <string name="service_info_unpaired">不配对</string>
+    <string name="service_info_matched">已配对</string>
+    <string name="service_info_matching">正在配对</string>
+    <string name="service_info_unkonwn">未知</string>
+    <string name="toward_rigth">></string>
+
+
+</resources>

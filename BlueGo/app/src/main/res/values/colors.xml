@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="font_navitem_check">#c1e1ff</color>
+    <color name="font_navitem_check_shadow">#8500192b</color>
+    <color name="font_navitem_focus">#c1e1ff</color>
+    <color name="font_navitem_focus_shadow">#8500192b</color>
+    <color name="font_navitem_down">#deefff</color>
+    <color name="font_navitem_up">#acc4da</color>
+    <color name="font_navitem_shadow">#c0000a13</color>
+    <color name="as_start_search_tip">#2f6f84</color>
+    <color name="as_wait_tip">#96b4be</color>
+    <color name="ms_value_focus">#c1e1ff</color>
+    <color name="ms_value_normal">#718b94</color>
+    <color name="pg_main_title">#588ea1</color>
+    <color name="pg_text_normal">#96b4be</color>
+    <color name="pg_text_checked">#16b3e3</color>
+    <color name="pg_operation_tip_text">#3f6882</color>
+    <color name="dialog_tip_text">#97c1dc</color>
+    <color name="grey_not_focus">#666666</color>
+
+    <color name="wifi_ssid_default_color">#96b4be</color>
+    <color name="wifi_ssid_focus_color">#c1e1ff</color>
+    <color name="wifi_state_hint_color">#4496b4be</color>
+
+    <color name="color_edit_enable_false_input">#4496b4be</color>
+
+    <drawable name="transparent">#00000000</drawable>
+</resources>
