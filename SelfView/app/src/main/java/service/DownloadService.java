@@ -55,7 +55,7 @@ public class DownloadService extends Service {
         LogUtil.i("DownloadService.getDownloadPath path: "+path);
         return path;
     }
-    private Handler threadHandler = new Handler();
+//    private Handler threadHandler = new Handler();
 
     class LooperThread extends Thread {
 
