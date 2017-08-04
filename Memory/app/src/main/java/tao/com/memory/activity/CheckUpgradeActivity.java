@@ -1,10 +1,12 @@
 package tao.com.memory.activity;
 
 import android.app.Activity;
+import android.app.IntentService;
 import android.app.Service;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.os.Binder;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.RemoteException;
@@ -41,6 +43,17 @@ public class CheckUpgradeActivity extends Activity implements View.OnClickListen
         btWait.setOnClickListener(this);
         btNotify.setOnClickListener(this);
         btSleep.setOnClickListener(this);
+        IntentService service = new IntentService("dd") {
+            @Override
+            public void onCreate() {
+                super.onCreate();
+            }
+
+            @Override
+            protected void onHandleIntent(Intent intent) {
+
+            }
+        };
     }
 
     @Override

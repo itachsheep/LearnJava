@@ -1,10 +1,12 @@
 package service;
 
+import android.app.IntentService;
 import android.app.Service;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Looper;
+import android.os.RemoteCallbackList;
 import android.os.RemoteException;
 
 import java.io.FileNotFoundException;
@@ -38,6 +40,7 @@ public class DownloadService extends Service {
     public void onCreate() {
         LogUtil.i("DownloadService.onCreate");
         super.onCreate();
+        RemoteCallbackList
         sendDownloadProgress();
         try {
             String path = getDownloadPath();
@@ -55,7 +58,7 @@ public class DownloadService extends Service {
         LogUtil.i("DownloadService.getDownloadPath path: "+path);
         return path;
     }
-//    private Handler threadHandler = new Handler();
+    private Handler threadHandler = new Handler();
 
     class LooperThread extends Thread {
 
