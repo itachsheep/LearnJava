@@ -3,6 +3,7 @@ package com.taow.contentproviderserver;
 import android.content.ContentProvider;
 import android.content.ContentValues;
 import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -12,16 +13,18 @@ import android.support.annotation.Nullable;
  */
 
 public class BookProvider extends ContentProvider {
+    private SQLiteDatabase db;
     @Override
     public boolean onCreate() {
-        LogUtil.i("BookProvider.onCreate. "+Thread.currentThread());
+        LogUtil.i("BookProvider.onCreate -> "+Thread.currentThread());
+        db = new DbOpenHelper(getContext()).getWritableDatabase();
         return false;
     }
 
     @Nullable
     @Override
     public Cursor query(@NonNull Uri uri, @Nullable String[] projection, @Nullable String selection, @Nullable String[] selectionArgs, @Nullable String sortOrder) {
-        LogUtil.i("BookProvider.query. "+Thread.currentThread());
+        LogUtil.i("BookProvider.query -> "+Thread.currentThread());
         return null;
     }
 
@@ -46,4 +49,6 @@ public class BookProvider extends ContentProvider {
     public int update(@NonNull Uri uri, @Nullable ContentValues values, @Nullable String selection, @Nullable String[] selectionArgs) {
         return 0;
     }
+
+
 }
