@@ -1,7 +1,4 @@
-#Fri Jul 07 11:33:57 CST 2017
-base.0=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_3d6a51bb3aa8b5a30651264b087f458d905f7de6
-renamed.1=classes2.dex
+#Tue Aug 08 16:37:52 CST 2017
+base.0=E\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
-file.1=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_ef45e33e6df5b7c42fa41a986c3fa8232b0f70e8\\classes.dex
-base.1=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_ef45e33e6df5b7c42fa41a986c3fa8232b0f70e8
-file.0=D\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_3d6a51bb3aa8b5a30651264b087f458d905f7de6\\classes.dex
+file.0=E\:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

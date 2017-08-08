@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+        "outputFile": "E:\\as_workspace\\MyDemo\\SimpleReader1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 201
                 },
                 "from": {
-                    "file": "D:\\as_workspace\\MyDemo\\SimpleReader1\\app\\src\\main\\res\\values-v14\\styles.xml",
+                    "file": "E:\\as_workspace\\MyDemo\\SimpleReader1\\app\\src\\main\\res\\values-v14\\styles.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
