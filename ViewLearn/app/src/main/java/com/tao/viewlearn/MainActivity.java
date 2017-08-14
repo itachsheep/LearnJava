@@ -16,6 +16,9 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import beans.SparseBean;
 
 public class MainActivity extends AppCompatActivity {

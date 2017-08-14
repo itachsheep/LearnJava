@@ -27,3 +27,19 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
 }
+def depend(Closure cl){
+    cl.call()
+}
+
+def printpath(String path){
+    println path
+}
+depend{
+    printpath('hahhah taowei')
+}
+
+task hello{
+    println 'hello world'
+}
+
+
