@@ -20,6 +20,7 @@ public class ObservableManager<T> {
                 LogUtils.i("ObservableManager observable subscribe");
             }
         });
+
     };
 
     public static ObservableManager getInstance(){
