@@ -3,14 +3,13 @@ package com.taow.rxjavademo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import io.reactivex.Observable;
-import io.reactivex.ObservableEmitter;
-import io.reactivex.ObservableOnSubscribe;
+import org.reactivestreams.Subscriber;
+import org.reactivestreams.Subscription;
+
 import io.reactivex.Observer;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.Disposable;
-import io.reactivex.subscribers.DefaultSubscriber;
-import util.LogUtils;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,42 +18,53 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //1, 使用Rxjava observer
+        //1,observer
         Observer<String> observer = new Observer<String>() {
             @Override
             public void onSubscribe(@NonNull Disposable d) {
-                LogUtils.i("Observer onSubscribe ");
+
             }
 
             @Override
             public void onNext(@NonNull String s) {
-                LogUtils.i("Observer onNext ");
+
             }
 
             @Override
             public void onError(@NonNull Throwable e) {
-                LogUtils.i("Observer onError ");
+
             }
 
             @Override
             public void onComplete() {
-                LogUtils.i("Observer onComplete ");
+
             }
         };
 
-        //2，使用Rxjava subscribe
-
-        //3, 创建Observable
-        Observable<String> observable = Observable.create(new ObservableOnSubscribe<String>() {
+        //2, subscribe
+        Subscriber<String> subscriber = new Subscriber<String>() {
             @Override
-            public void subscribe(@NonNull ObservableEmitter<String> e) throws Exception {
-                LogUtils.i("Observable subscribe ");
-                e.onNext("Hello");
-                e.onNext("Hi");
-                e.onNext("aloha");
-                e.onComplete();
+            public void onSubscribe(Subscription s) {
+
             }
-        });
+
+            @Override
+            public void onNext(String s) {
+
+            }
+
+            @Override
+            public void onError(Throwable t) {
+
+            }
+
+            @Override
+            public void onComplete() {
+
+            }
+        };
+
+        //3,
 
     }
 }
