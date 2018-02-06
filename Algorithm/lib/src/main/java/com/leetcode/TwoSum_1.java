@@ -23,6 +23,7 @@ public class TwoSum_1 {
         int target = 26;
         int[] res = twoSum(nums, target);
         System.out.println("res[] :  "+res[0]+", "+res[1]);
+        System.out.println();
     }
 
 
