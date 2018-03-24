@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">AsJava</string>
-    <string name="ca_cha_ru">智能卡插入</string>
-    <string name="ca_ba_chu">智能卡拔出</string>
-    <string name="checking_upgrade_info">正在检测升级信息&#8230;</string>
-</resources>
