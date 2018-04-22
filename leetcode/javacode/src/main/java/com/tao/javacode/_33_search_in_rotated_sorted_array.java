@@ -35,14 +35,14 @@ public class _33_search_in_rotated_sorted_array {
             int mid = (lo + hi) / 2;
             if(a[mid] == target) return mid;
             if(a[lo] <= a[mid]){
-                // 4 5 0 8 12 23 34 45 67
+                //4,0,1,2 3 ，旋转后，第一个元素小于中间元素，
                 if(target >= a[lo] && target < a[mid]){
                     hi = mid -1;
                 }else {
                     lo = mid + 1;
                 }
             }else {
-                // 7 8 9 0 1 2 3 4 5 6
+                // 7 8 9 0 1 2 3 4 5 6，旋转后，第一个元素大于中间元素，
                 if(target > a[mid] && target <= a[hi]){
                     lo = mid + 1;
                 }else {
