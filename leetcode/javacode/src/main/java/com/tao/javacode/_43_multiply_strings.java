@@ -25,8 +25,7 @@ package com.tao.javacode;
 
 public class _43_multiply_strings {
     public static void main(String[] args){
-        String uuid = "QD406-000000000000000000";
-        System.out.println(uuid.substring(6));
+        System.out.println("res = "+multiply("11","22"));
     }
 
     //`num1[i] * num2[j]` will be placed at indices `[i + j`, `i + j + 1]`
@@ -43,7 +42,11 @@ public class _43_multiply_strings {
             }
         }
         StringBuilder sb = new StringBuilder();
-//        for (int )
-        return sb.toString();
+        for (int p: pos) {
+            if(!(sb.length() == 0 && p == 0)){
+                sb.append(p);
+            }
+        }
+        return sb.length() == 0 ? "0" : sb.toString();
     }
 }
