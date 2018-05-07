@@ -59,20 +59,28 @@ public class _44_wildcard_match {
     }
 
     public static  boolean isMatch(String str, String pattern) {
+        int step = 1;
         int s = 0, p = 0, match = 0, starIdx = -1;
         while ( s < str.length()){
             if(p < pattern.length() && (pattern.charAt(p) == '?' || str.charAt(s) == pattern.charAt(p))){
+                System.out.println("if 1 , step "+(step++)+", s = "+str.charAt(s)+", p = "+pattern.charAt(p));
                 s++;
                 p++;
+
             }else if(p < pattern.length() && pattern.charAt(p) == '*'){
+                System.out.println("if 2 , step "+(step++)+", s = "+str.charAt(s)+", p = "+pattern.charAt(p));
                 starIdx = p;
                 match = s;
                 p++;
+
             }else if(starIdx != -1){
+                System.out.println("if 3 , step "+(step++)+", s = "+str.charAt(s)+", p = "+pattern.charAt(p));
                 p = starIdx + 1;
                 match++;
                 s = match;
+
             }else {
+                System.out.println("if 4 , step "+(step++)+", s = "+str.charAt(s)+", p = "+pattern.charAt(p));
                 return false;
             }
         }
