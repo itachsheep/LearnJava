@@ -26,6 +26,7 @@ public class _59_spiral_matrix {
     }
 
     public static int[][] generateMatrix(int n) {
-
+        int[][] matrix = new int[n][n];
+        return  matrix;
     }
 }
