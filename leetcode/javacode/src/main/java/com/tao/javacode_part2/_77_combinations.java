@@ -34,7 +34,7 @@ public class _77_combinations {
 
     public static List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> combs = new ArrayList<>();
-        combine(combs,new ArrayList<List<Integer>>(),1,n,k);
+        combine(combs,new ArrayList<Integer>(),1,n,k);
         return combs;
     }
 
