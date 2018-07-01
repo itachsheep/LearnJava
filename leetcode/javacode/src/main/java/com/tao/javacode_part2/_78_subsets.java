@@ -52,9 +52,8 @@ public class _78_subsets {
     }
 
     /**
-     * 先将1 2 3 4 加入templist ，现在有四个元素
-     *
-     *
+     * 解题思路参考 http://www.cnblogs.com/grandyang/p/4309345.html
+     * 
      */
     public static void backtrack(List<List<Integer>> list,List<Integer> templist,
                                  int[] nums,int start){
