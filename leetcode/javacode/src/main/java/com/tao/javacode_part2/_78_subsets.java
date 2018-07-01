@@ -53,7 +53,7 @@ public class _78_subsets {
 
     /**
      * 解题思路参考 http://www.cnblogs.com/grandyang/p/4309345.html
-     * 
+     *
      */
     public static void backtrack(List<List<Integer>> list,List<Integer> templist,
                                  int[] nums,int start){
