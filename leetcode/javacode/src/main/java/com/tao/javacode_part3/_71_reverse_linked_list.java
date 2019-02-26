@@ -19,7 +19,7 @@ public class _71_reverse_linked_list {
         if(null == head || null == head.next)return head;
         ListNode p = head, q = head.next, r;
         head.next = null;
-        while (q){
+        while (q != null){
             r = q.next;
             q.next = p;
             p = q;
