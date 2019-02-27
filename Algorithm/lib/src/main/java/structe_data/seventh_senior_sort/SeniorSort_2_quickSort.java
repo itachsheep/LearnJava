@@ -13,6 +13,16 @@ public class SeniorSort_2_quickSort {
         Utils.printArr(arr);
     }
 
+    /**
+     * 在最好的情况下，每次我们进行一次分区，
+     * 我们会把一个序列刚好分为几近相等的两个子序列，
+     * 这个情况也我们每次递归调用的是时候也就刚好处理一半大小的子序列。
+     * 这看起来其实就是一个完全二叉树，树的深度为 O(logn)，
+     * 所以我们需要做 O(logn) 次嵌套调用。但是在同一层次结构的两个程序调用中，
+     * 不会处理为原来数列的相同部分。
+     * 因此，程序调用的每一层次结构总共全部需要 O(n) 的时间。
+     * 所以这个算法在最好情况下的时间复杂度为 O(nlogn)。
+     */
     private static void quickSort(int[] arr, int left, int right) {
         if(left >= right){
             return;
