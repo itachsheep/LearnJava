@@ -1,5 +1,4 @@
 package com.tao.javacode;
-
 /**
  * Merge two sorted linked lists and return it as a new list.
  * The new list should be made by splicing together the nodes of the first two lists.
@@ -12,6 +11,7 @@ package com.tao.javacode;
  *
  * Created by SDT14324 on 2018/4/4.
  */
+
 
 public class _21_merge_two_list {
    static class ListNode{
