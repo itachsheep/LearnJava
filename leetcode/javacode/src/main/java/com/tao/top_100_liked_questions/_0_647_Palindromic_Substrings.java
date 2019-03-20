@@ -19,7 +19,7 @@ package com.tao.top_100_liked_questions;
  * Output: 6
  * Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
  */
-public class _647_Palindromic_Substrings {
+public class _0_647_Palindromic_Substrings {
     /**
      * 其实这道题也可以用递归来做，而且思路非常的简单粗暴。
      * 就是以字符串中的每一个字符都当作回文串中间的位置，
