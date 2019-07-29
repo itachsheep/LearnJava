@@ -2,6 +2,9 @@ package com.tao.interview;
 
 import com.tao.comm.TreeNode;
 
+import java.util.LinkedList;
+import java.util.Map;
+
 /**
  * Two elements of a binary search tree (BST) are swapped by mistake.
  *
@@ -34,7 +37,6 @@ public class microsoft_recover_binary_search_tree {
         int tmp = p.val;
         p.val = q.val;
         q.val = tmp;
-
     }
 
     public void dfs(TreeNode root){

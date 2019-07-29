@@ -15,8 +15,16 @@ public class Test {
         String[] split = format.split("\\.");
         System.out.println("split = "+split.length);*/
 
-        String temp = "左温区温度调到18度";
+        /*String temp = "左温区温度调到18度";
         System.out.println(temp.substring(7));
-        System.out.println(temp.substring(7,temp.length()-1));
+        System.out.println(temp.substring(7,temp.length()-1));*/
+
+        String str1 = "hello";
+        String str2 = new String("hello");
+        String str3 = "hello";
+
+        System.out.println(str1 == str2);
+        System.out.println(str1 == str3);
+        Object obj;
 
     }}
