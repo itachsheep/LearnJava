@@ -10,7 +10,7 @@ import java.util.Set;
 /**
  * 10亿个数查重复
  */
-public class _2_billion_count_query_repeats {
+public class _36_billion_count_query_repeats {
     public static void main(String[] args) {
         int[] arr = {7,4,1,2,3,5,6,8,3,5};
         Set<Integer> integers = bigNumberOfDataQuery(arr);
