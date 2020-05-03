@@ -34,7 +34,7 @@ public class _8_string_to_integer {
                         throw new IllegalArgumentException("number is too large!!");
                     }
                     sum = temp;
-                }else {
+                } else {
                     temp =  sum * 10 - (c - '0');
                     if(temp > 0){
                         throw new IllegalArgumentException("number is too small!!");
