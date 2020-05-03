@@ -1,6 +1,7 @@
 package com;
 
 import com.tao.comm.ListNode;
+import com.tao.comm.TreeNode;
 
 import java.util.Iterator;
 import java.util.List;
@@ -55,4 +56,33 @@ public class Util<T> {
         }
         return head;
     }
+
+    public void insertTreeNode(int value,TreeNode root){
+        TreeNode newNode = new TreeNode(value);
+        if(root == null)
+            root = newNode;
+        else {
+            TreeNode current = root;
+            TreeNode parent;
+            while (true){
+                parent = current;
+                if(current.val > value){
+                    //左子树
+                    current = current.left;
+                    if(current == null){
+                        parent.left = newNode;
+                        return;
+                    }
+                }else {
+                    //右子树
+                    current = current.right;
+                    if(current == null){
+                        parent.right = newNode;
+                        return;
+                    }
+                }
+            }
+        }
+    }
+
 }
