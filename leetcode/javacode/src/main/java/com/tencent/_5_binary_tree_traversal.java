@@ -19,6 +19,10 @@ public class _5_binary_tree_traversal {
         System.out.println("the inOrder is: ");
         inOrder(root);
         System.out.println();
+
+        System.out.println("the postOrder is: ");
+        postOrder(root);
+        System.out.println();
     }
 
     public static void preOrder(TreeNode root) {
@@ -34,6 +38,14 @@ public class _5_binary_tree_traversal {
             inOrder(root.left);
             System.out.print(root.val + " -> ");
             inOrder(root.right);
+        }
+    }
+
+    public static void postOrder(TreeNode root) {
+        if(root != null) {
+            postOrder(root.left);
+            postOrder(root.right);
+            System.out.print(root.val + " -> ");
         }
     }
 }
