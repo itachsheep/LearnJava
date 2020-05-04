@@ -12,7 +12,7 @@ public class _4_插入排序 {
         for (int out = 1; out < arr.length; out++){
             int in = out;
             int temp = arr[out];
-            while (temp > 0 && arr[in - 1] > temp){
+            while (in > 0 && arr[in - 1] > temp){
                 arr[in] = arr[in - 1];
                 in--;
             }
