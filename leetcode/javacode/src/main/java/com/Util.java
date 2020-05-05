@@ -34,7 +34,7 @@ public class Util<T> {
         System.out.println();
     }
 
-    public void printList(ListNode head){
+    public static void printList(ListNode head){
         if(head == null)return;
         while (head != null){
             System.out.print(head.val +" -> ");
@@ -43,7 +43,7 @@ public class Util<T> {
         System.out.println();
     }
 
-    public ListNode createList(int[] num){
+    public static ListNode createList(int[] num){
         ListNode head = null, tail;
         if(num == null || num.length <=0 ) return null;
         if(num != null && num.length >= 1) {
@@ -58,7 +58,7 @@ public class Util<T> {
         return head;
     }
 
-    public void insertTreeNode(int value,TreeNode root){
+    public static void insertTreeNode(int value,TreeNode root){
         TreeNode newNode = new TreeNode(value);
         if(root == null)
             root = newNode;
