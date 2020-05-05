@@ -20,12 +20,24 @@ public class _19_有序数组重复元素保留两个 {
         int[] arr1 = {0,0,1,1,1,1,2,3,3};
         int[] arr2 = {1,1,1,2,2,3};
 
-        printNewArray(arr1);
-        printNewArray(arr2);
+        //printNewArray(arr1);
+        //printNewArray(arr2);
+        System.out.println(removeDuplicateOption(arr1));
+        System.out.println(removeDuplicateOption(arr2));
 
     }
 
-    public static int removeDuplicae(int[] arr) {
+    public static int removeDuplicateOption(int[] arr) {
+        int i = 0;
+        for (int num:arr) {
+            if(i < 2 || num > arr[i - 2]) {
+                arr[i++] = num;
+            }
+        }
+        return i;
+    }
+
+    public static int removeDuplicate(int[] arr) {
         int flag = 1;
         int last = arr[0];
         int pos = 1;
@@ -42,7 +54,7 @@ public class _19_有序数组重复元素保留两个 {
     }
 
     public static void printNewArray(int[] arr) {
-        int newLength = removeDuplicae(arr);
+        int newLength = removeDuplicate(arr);
         System.out.println("newLength: " + newLength);
         for (int i = 0 ; i < newLength; i++) {
             System.out.print(arr[i] + " ");
