@@ -1,6 +1,5 @@
 package com.tencent;
 
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 public class _38_有序数组中找到最接近目标数的index {
     public static void main(String[] args) {
@@ -25,6 +24,15 @@ public class _38_有序数组中找到最接近目标数的index {
 
     }
 
+    /**
+     * https://blog.csdn.net/lhl1124281072/article/details/80192606
+     *
+     * 给定一个有序数组与目标值，数组中不一定有目标值，找出与目标值最相近的数的下标
+     *
+     * @param arr
+     * @param target
+     * @return
+     */
     private static int findCloset(int[] arr, int target) {
         int left = 0;
         int right = arr.length - 1;
