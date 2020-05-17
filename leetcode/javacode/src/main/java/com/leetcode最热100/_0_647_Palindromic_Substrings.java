@@ -1,4 +1,4 @@
-package com.tao.top_100_liked_questions;
+package com.leetcode最热100;
 
 /**
  * Given a string, your task is to count how many palindromic substrings in this string.
