@@ -36,7 +36,6 @@ public class _7_整数反转 {
         System.out.println(x3 + " revers ---> " + reverse(x3));
         System.out.println(x4 + " revers ---> " + reverse(x4));
         System.out.println(x5 + " revers ---> " + reverse(x5));
-
     }
 
     /**
