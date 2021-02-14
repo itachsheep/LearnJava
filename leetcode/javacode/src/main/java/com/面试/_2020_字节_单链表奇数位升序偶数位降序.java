@@ -15,6 +15,7 @@ public class _2020_字节_单链表奇数位升序偶数位降序 {
      * 然后对偶数链表进行反转。
      *
      * 最后将两个有序链表进行合并。
+     * https://www.cnblogs.com/DarrenChan/p/8764608.html
      * @param args
      */
     public static void main(String[] args) {

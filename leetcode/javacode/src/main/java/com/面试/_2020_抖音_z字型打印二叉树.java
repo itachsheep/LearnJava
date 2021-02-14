@@ -7,7 +7,24 @@ import java.util.Stack;
 
 class _2020_抖音_z字型打印二叉树 {
     public static void main(String[] args) {
+        TreeNode root1 = new TreeNode(1);
+        root1.left = new TreeNode(2);
+        root1.right = new TreeNode(3);
+        root1.left.left = new TreeNode(4);
+        root1.left.right = new TreeNode(5);
+        root1.right.left = new TreeNode(6);
+        root1.right.right = new TreeNode(7);
 
+        TreeNode root2 = null;
+        ArrayList<ArrayList<Integer>> arrayLists = printTree(root1);
+        for (int i = 0; i < arrayLists.size(); i++) {
+            ArrayList<Integer> list = arrayLists.get(i);
+
+            for (int j = 0; j < list.size(); j++) {
+                System.out.print(" " + list.get(j)+ ",");
+            }
+            System.out.println();
+        }
     }
 
     /**
@@ -19,9 +36,9 @@ class _2020_抖音_z字型打印二叉树 {
      * https://blog.csdn.net/zhou15755387780/article/details/79228616
      * @param root
      */
-    public static void printTree(TreeNode root) {
-        ArrayList<Integer> arrayList = new ArrayList<>();
-        if(root == null) return;
+    public static ArrayList<ArrayList<Integer>> printTree(TreeNode root) {
+        ArrayList<ArrayList<Integer>> arrayList = new ArrayList<>();
+        if(root == null) return null;
 
         Stack<TreeNode> stack = new Stack<>();
         Stack<TreeNode> stack2 = new Stack<>();
@@ -41,13 +58,17 @@ class _2020_抖音_z字型打印二叉树 {
 
             while (index % 2 == 0 && !stack2.isEmpty()) {
                 TreeNode node = stack2.pop();
-                temp.add(node.val);
-                stack.push(node.right);
-                stack.push(node.left);
+                if(node != null) {
+                    temp.add(node.val);
+                    stack.push(node.right);
+                    stack.push(node.left);
+                }
             }
-
+            if (temp.size() != 0) {
+                arrayList.add(temp);
+            }
             index++;
-            arrayList.addAll(temp);
         }
+        return arrayList;
     }
 }
