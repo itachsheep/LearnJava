@@ -23,7 +23,6 @@ public class _2020_字节_判断合法二叉搜索树 {
             }
             preRoot = root;
             root = root.right;
-
         }
         return true;
     }
