@@ -32,10 +32,12 @@ public class _2020_字节_单链表奇数位升序偶数位降序 {
      */
     private static ListNode reverse(ListNode head) {
         if (head == null || head.next == null) return head;
-        ListNode p = head.next;
-        head.next = null;
+        ListNode p = head.next;//p = 2
+        head.next = null;//1.next = null
         ListNode newHead = reverse(p);
-        p.next = head;
+        System.out.println("reverse newhead: ");
+        Util.printList(newHead);
+        p.next = head;//2.next = 1;
         return newHead;
     }
 }
