@@ -26,12 +26,12 @@ public class _3_无重复字符的最长子串 {
      */
     public static void main(String[] args) {
         String s1 = "abcabcbb";
-        String s2 = "bbbbb";
-        String s3 = "pwwkew";
+        //String s2 = "bbbbb";
+        //String s3 = "pwwkew";
 
         System.out.println(lengthOfLongestSubString(s1));
-        System.out.println(lengthOfLongestSubString(s2));
-        System.out.println(lengthOfLongestSubString(s3));
+//        System.out.println(lengthOfLongestSubString(s2));
+//        System.out.println(lengthOfLongestSubString(s3));
     }
 
     /**
@@ -46,12 +46,18 @@ public class _3_无重复字符的最长子串 {
         set.add(s.charAt(0));
 
         for (int left = 1; left < n; left++) {
+
             while (rk < n && !set.contains(s.charAt(rk))) {
                 set.add(s.charAt(rk));
+                System.out.println("add  rk: "  + rk + ", " + s.charAt(rk));
                 ++rk;
             }
+
             max = Math.max(max, rk - left + 1);
             set.remove(s.charAt(left -1));
+            System.out.println("remove max:" + max+ ", rk:" + rk
+                + ",left: " + left);
+
         }
         return max;
     }

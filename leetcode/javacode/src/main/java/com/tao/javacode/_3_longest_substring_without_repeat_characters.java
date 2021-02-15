@@ -39,7 +39,7 @@ public class _3_longest_substring_without_repeat_characters {
                 if(j - i+1 > lgStr.length()){
                     lgStr = s.substring(i,j);
                 }
-            }else {
+            } else {
                 set.remove(s.charAt(i));
                 i++;
             }
