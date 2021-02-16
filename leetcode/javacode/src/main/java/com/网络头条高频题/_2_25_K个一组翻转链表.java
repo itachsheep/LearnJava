@@ -47,7 +47,7 @@ public class _2_25_K个一组翻转链表 {
     public static void main(String[] args) {
         ListNode head = Util.createList(new int[]{1, 2, 3, 4, 5});
         Util.printList(head);
-        ListNode reverse = reverse(head);
+        ListNode reverse = reverseKGroup(head,2);
         Util.printList(reverse);
 
 
@@ -87,11 +87,17 @@ public class _2_25_K个一组翻转链表 {
             }
 
             ListNode next = tail.next;
-            //ListNode reverse = myReverse(head,tail);
-
+            ListNode[] reverse = myReverse(head,tail);
+            head = reverse[0];
+            tail = reverse[1];
+            // 把子链表重新接回原链表
+            pre.next = head;
+            tail.next = next;
+            pre = tail;
+            head = tail.next;
         }
 
-        return null;
+        return hair.next;
     }
 
     public static ListNode[] myReverse(ListNode head, ListNode tail) {
